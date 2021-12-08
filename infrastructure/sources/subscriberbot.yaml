@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: subscriberbot
+  namespace: flux-system
+spec:
+  interval: 20m0s
+  ref:
+    branch: main
+  url: https://github.com/pasiol/subscriber-bot
+

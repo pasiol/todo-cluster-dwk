@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - frontend/persistentVolume.yaml
+  - frontend/persistentVolumeClaim.yaml
+  - frontend/configMap.yaml
+  - db/persistentVolume.yaml
+  - db/persistentVolumeClaim.yaml
+  - db/deployment.yaml
+  - db/service.yaml
+  - backend/configMap.yaml
+  - backend/release.yaml
+  - backend/service.yaml
+  - backend/ingress.yaml
+  - frontend/service.yaml
+  - frontend/ingress.yaml
+  - frontend/release.yaml
+  - subscriberbot/release.yaml
+
