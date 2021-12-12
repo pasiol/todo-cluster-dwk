@@ -4,6 +4,6 @@ resources:
   - sources
   - nats
   - monitoring
-  - monitoring/monitoring-config
-  - monitoring/kube-prometheus-stack
+  #- monitoring/monitoring-config
+  #- monitoring/kube-prometheus-stack
   
